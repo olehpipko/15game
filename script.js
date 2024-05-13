@@ -162,18 +162,6 @@ const game = {
                 `Ты прошел уровень за ${this.steps - this.score} шагов.`
             );
             this.steps = 0;
-
-            const screamVID = document.createElement('video');
-            screamVID.setAttribute('controls', true);
-            screamVID.setAttribute('autoplay', true);
-            screamVID.setAttribute('loop', true);
-
-            const screamVIDSource = document.createElement('source');
-            screamVIDSource.setAttribute('src', './scream.mp4');
-            screamVIDSource.setAttribute('type', 'video/mp4');
-
-            screamVID.append(screamVIDSource);
-            document.body.append(screamVID);
             this.rand();
         }
     },
